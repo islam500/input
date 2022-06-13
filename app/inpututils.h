@@ -469,6 +469,8 @@ class InputUtils: public QObject
      */
     Q_INVOKABLE static bool rescaleImage( const QString &path, QgsProject *activeProject );
 
+    Q_INVOKABLE QPoint snapPoint( QgsQuickMapSettings *canvas );
+
   signals:
     Q_INVOKABLE void showNotificationRequested( const QString &message );
 

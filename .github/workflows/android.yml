@@ -1,17 +1,7 @@
 name: Android
-on:
-  push:
-    paths:
-    - 'app/**'
-    - 'core/**'
-    - 'images/**'
-    - 'qgsquick/**'
-    - 'scripts/**'
-    - '.github/workflows/android.yml'
 
-  release:
-    types:
-      - published
+on:
+ workflow_dispatch
 
 concurrency:
   group: ci-${{github.ref}}-android
